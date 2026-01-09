@@ -1,5 +1,5 @@
 # Overview
-This is a Java Spring Boot project that stores and retrieves chatbot command data from a PostgreSQL database.
+This is a Spring Boot 4 project that stores and retrieves chatbot command data from a PostgreSQL database.
 
 ## Purpose
-This project was created to demonstrate REST API, Spring Data JPA and PostgreSQL integration.
+This microservice project was created to demonstrate REST API, Spring Data JPA and PostgreSQL integration.
