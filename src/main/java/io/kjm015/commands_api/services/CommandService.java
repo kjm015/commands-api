@@ -26,6 +26,7 @@ public class CommandService {
         var commandEvent = new CommandEvent();
         commandEvent.setCommandName(commandEventRequest.commandName());
         commandEvent.setCommandArguments(commandEventRequest.commandArguments());
+        commandEvent.setSender(commandEventRequest.sender());
 
         return commandEventRepository.save(commandEvent);
     }
