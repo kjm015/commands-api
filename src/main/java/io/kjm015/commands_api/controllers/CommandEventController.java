@@ -17,6 +17,7 @@ public class CommandEventController {
     private final CommandService commandService;
 
     @GetMapping("/all")
+    @CrossOrigin(origins = "*")
     public List<CommandEvent> getAllCommandEvents() {
         return commandService.getAllCommandEvents();
     }
