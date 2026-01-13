@@ -2,6 +2,9 @@ server:
   port: 8081
 
 spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres

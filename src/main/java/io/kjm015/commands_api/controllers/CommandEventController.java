@@ -19,6 +19,7 @@ public class CommandEventController {
     @GetMapping("/all")
     @CrossOrigin(origins = "*")
     public List<CommandEvent> getAllCommandEvents() {
+        log.info("Received request to get all command events");
         return commandService.getAllCommandEvents();
     }
 
