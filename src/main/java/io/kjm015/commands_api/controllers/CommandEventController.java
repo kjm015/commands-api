@@ -1,7 +1,6 @@
 package io.kjm015.commands_api.controllers;
 
 import io.kjm015.commands_api.models.CommandEvent;
-import io.kjm015.commands_api.models.CommandEventRequest;
 import io.kjm015.commands_api.services.CommandService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -24,8 +23,8 @@ public class CommandEventController {
     }
 
     @PostMapping("/save")
-    public CommandEvent saveCommandEvent(@RequestBody CommandEventRequest commandEventRequest) {
-        return commandService.saveCommandEvent(commandEventRequest);
+    public CommandEvent saveCommandEvent(@RequestBody CommandEvent commandEvent) {
+        return commandService.saveCommandEvent(commandEvent);
     }
 
 }

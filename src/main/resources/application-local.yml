@@ -7,5 +7,5 @@ spring:
       ddl-auto: create
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
+    username: ${POSTGRES_USERNAME:postgres}
     password: ${POSTGRES_PASSWORD}

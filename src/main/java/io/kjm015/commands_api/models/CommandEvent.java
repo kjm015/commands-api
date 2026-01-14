@@ -14,7 +14,7 @@ public class CommandEvent {
     @Id
     @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     private String commandName;
     private String commandArguments;
